@@ -2,7 +2,7 @@ import Posts from "./components/Posts";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="px-5">
       <h2 className="mb-4 text-center text-4xl font-bold text-gray-900">
         Rashid Ameer
       </h2>
