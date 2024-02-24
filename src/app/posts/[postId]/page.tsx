@@ -59,4 +59,12 @@ async function page({ params: { postId } }: Props) {
   );
 }
 
+export function generateStaticParams() {
+  const postsMetaData = getSortedPostsMetaData();
+
+  return postsMetaData.map((postMetaData) => {
+    return { postId: postMetaData.id };
+  });
+}
+
 export default page;
